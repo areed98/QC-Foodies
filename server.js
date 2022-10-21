@@ -1,5 +1,5 @@
 const express = require('express');
-const session = require('experss-session');
+const session = require('express-session');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const path = require('path');
