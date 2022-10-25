@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-const express = require('express');
-const session = require('express-session');
-const exphbs = require('express-handlebars');
-const hbs = exphbs.create({});
->>>>>>> 661d1c590f7c9b30bbe4a5dc60f60b9f4b3ac00a
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
