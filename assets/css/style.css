@@ -1,0 +1,13 @@
+/* Legacy styles reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* navigation size change*/
+
+.navbar-item img {
+    max-height: 6.5rem;
+}
