@@ -1,4 +1,4 @@
-![QC-Foodies Logo](./assets/images/qc-foodies-logo.png) 
+![QC-Foodies Logo](./assets/images/Untitled_Artwork%204.png) 
 
 # QC-Foodies
 
@@ -21,11 +21,7 @@
 
 # The Project 
 
-QC Foodies is a food blog created by 4 individuals based in Charlotte, NC. Here, you can share your thoughts on different dishes or drinks from: 
-
-- recipes
-- restaurants
-- breweries
+QC Foodies is a food blog created by 4 individuals based in Charlotte, NC. Here, you can share your thoughts on different dishes from restaurants or recipes.
 
 For the fun time lovers who replace their food with drinks, we offer a brewery option as well. 
 
@@ -33,11 +29,19 @@ Navigate through the page, utilizing the homepage or the navbar on the top of th
 
 Log-in to keep up with other QCFoodies and interact with them as well. Create your own post (including a photo) or add a comment on other user's posts based on your experience if you had the same food or drink. Rate or like the post. 
 
-QC Foodies is Charlotte based however open to the Foodie post from other areas of the world! Share your favorites with other interested foodies! 
+QC Foodies is Charlotte based, however open to the Foodie posts from other areas of the world! Share your favorites with other interested foodies! 
 
 ## Technologies Used
-### Front-End
-### Back-End
+### Front-End:
+- Javascript
+- HTML
+- CSS
+- Bulma
+
+### Back-End:
+- SQL
+- Node.js
+- Cloudinary
 
 ## Installation
 
