@@ -12,23 +12,22 @@
     </div>
     <input type="file" id="image_input" accept="image/png, image/jpg"> </input>
 {{!-- I never finished, but this is where the image uploader would go --}}
-    <div id="display_image"></div>
-
+    {{!-- <div id="display_image"></div> --}}
     <button type="submit" class="btn button is-primary">Create</button>
   </form>
 </section>
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ol>
+  <h2 class="is-size-2 center-text">Your Posts</h2>
+  <ul>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link box">Edit post</a>
     </li>
     {{/each}}
-  </ol>
+  </ul>
 </section>
 {{/if}}
 

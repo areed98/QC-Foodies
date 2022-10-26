@@ -26,26 +26,28 @@
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a> --}}
+
 {{!-- Profile and Log Out  --}}
             </div>
                 <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-start">
                         <div class="navbar-item">
                             <div class="buttons are-medium">
-                                <a class="button is-light">
+                                <a class="button is-light" href="/">
                                     Home
                                 </a>
                             </div>
                         </div>
                         <div class="navbar-item">
                             <div class="buttons are-medium">
-                                <a class="button is-light">
+                                <a class="button is-light" href="/dashboard">
                                     My Profile
                                 </a>
                             </div>
                         </div>
                     </div>
 
+                    {{!-- LogIn/LogOut/Sign Up Btn --}}
                     <div class="navbar-end">
                         <div class="navbar-item">
                             {{#if loggedIn}}
@@ -67,32 +69,37 @@
     <main>
             <section class="section" id="mainContent">
 
+                {{!-- Search Bar --}}
                 <div id="searchBar" class="container mb-6">
                     <div class="field is grouped is-grouped-multiline">
                         <div class="field has-addons is-justify-content-center">
                             <div class="control is-expanded">
-                            <input class="input" type="text" placeholder="Search for a Recipe/Restaurant!">
+                                <input class="input form-control" type="text" placeholder="Search" id="searchBar">
                             </div>
                             <div class="control">
-                                <button type="submit" class="button is-primary">Search</button>
+                                <button type="submit" class="button is-primary search-btn">Search</button>
                             </div>
                         </div>
                         <div class="field is-horizontal is-justify-content-center">
+                            {{!-- Recipes Btn --}}
                             <p class="control is-flex-grow-1">
                                 <a class="button is-fullwidth">
                                     Recipes
                                 </a>
                             </p>
+                            {{!-- Restaurant Btn  --}}
                             <p class="control is-flex-grow-1">
                                 <a class="button is-fullwidth">
                                     Restaurants
                                 </a>
                             </p>
+                            {{!-- Bars/Breweries Btn --}}
                             <p class="control is-flex-grow-1">
                                 <a class="button is-fullwidth">
                                     Bars/Breweries
                                 </a>
                             </p>
+                            {{!-- Drinks Btn  --}}
                             <p class="control is-flex-grow-1">
                                 <a class="button is-fullwidth">
                                     Drinks
@@ -112,6 +119,7 @@
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
+  <script src="/javascript/search.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: hsl(171, 71%, 53%);
   font-weight: bold;
   transition: color .1s;
 }
