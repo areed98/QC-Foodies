@@ -2,14 +2,17 @@
   <h2 class="is-size-2 center-text">Create New Post</h2>
 
   <form class="new-post-form">
+    {{!-- Title --}}
     <div>
-      <label for="post-title" class="label">Headline of your post</label>
+      <label for="post-title" class="label">Title of your post</label>
       <input type="text" id="post-title" name="post-title" />
     </div>
+    {{!-- Website Link  --}}
     <div>
       <label for="post-url" class="label">Website/Link to the foodie?</label>
       <input id="post-url" name="post-url" />
     </div>
+    
     <input type="file" id="image_input" accept="image/png, image/jpg"> </input>
 {{!-- I never finished, but this is where the image uploader would go --}}
     {{!-- <div id="display_image"></div> --}}
