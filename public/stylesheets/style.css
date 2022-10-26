@@ -1,5 +1,15 @@
-* {
-  box-sizing: border-box;
+/* Legacy styles reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* navigation size change*/
+
+.navbar-item img {
+    max-height: 6.5rem;
 }
 
 body, html {
@@ -22,7 +32,6 @@ a:hover {
 }
 
 button {
-  background-color: #225ca3;
   border: 0;
   padding: 1%;
   color: white;
@@ -97,7 +106,6 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -175,4 +183,12 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+
+.new-post-form {
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
 }

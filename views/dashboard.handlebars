@@ -1,20 +1,20 @@
-<section>
-  <h2>Create New Post</h2>
+<section class="box">
+  <h2 class="is-size-2 center-text">Create New Post</h2>
 
   <form class="new-post-form">
     <div>
-      <label for="post-title">Title</label>
+      <label for="post-title" class="label">Headline of your post</label>
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      <label for="post-url">Link</label>
+      <label for="post-url" class="label">Website/Link to the foodie?</label>
       <input id="post-url" name="post-url" />
     </div>
     <input type="file" id="image_input" accept="image/png, image/jpg"> </input>
-
+{{!-- I never finished, but this is where the image uploader would go --}}
     <div id="display_image"></div>
 
-    <button type="submit" class="btn">Create</button>
+    <button type="submit" class="btn button is-primary">Create</button>
   </form>
 </section>
 

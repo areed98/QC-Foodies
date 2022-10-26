@@ -4,26 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="images/QCfoodiesLogo.png" />
   <title>QC Foodies</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
     <div id="mainWrapper" class="mt-4 mr-6 ml-6">
 
     <header class="mb-6">
-        <div class="navbar-brand"></div>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <a class="navbar-item" href="/">
-            <img src="images/City-Crown-1000.jpg" alt="QCFoodies Logo" width="50" height="100">
-        </a>
+        <div class="navbar-brand">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <a class="navbar-item" href="/">
+                    <img src="images/QCfoodiesLogo.png" alt="QCFoodies Logo" width="100" height="100">
+                </a>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+{{!-- Drop Down Nav Bar --}}
+            {{!-- <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </a> --}}
+{{!-- Profile and Log Out  --}}
             </div>
                 <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-start">
@@ -58,7 +61,8 @@
                         </div>
                     </div>
                 </div>
-      </nav>
+            </nav>
+        </div>
     </header>
     <main>
             <section class="section" id="mainContent">
