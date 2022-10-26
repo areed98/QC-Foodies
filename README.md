@@ -1,13 +1,3 @@
-
-
-
-# Contributors
-
-Justin Klaver
-Austin Reed
-Benny Le
-Allison Venning
-
 ![QC-Foodies Logo](./assets/images/qc-foodies-logo.png) 
 
 # QC-Foodies
@@ -19,7 +9,7 @@ Allison Venning
 - [Technology](#technology)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Team Shooting-Stars](#team-shooting-stars)
 - [License](#license)
 
 ## Website URL
@@ -29,13 +19,13 @@ Allison Venning
 ## Description
 
 
-# The Project - A food blog created by 4 individuals based in Charlotte, NC. 
+# The Project 
 
-Here, you can share your thoughts on different dishes from: 
+QC Foodies is a food blog created by 4 individuals based in Charlotte, NC. Here, you can share your thoughts on different dishes or drinks from: 
 
+- recipes
 - restaurants
-- recipes 
-- specific restaurants
+- breweries
 
 For the fun time lovers who replace their food with drinks, we offer a brewery option as well. 
 
@@ -44,6 +34,10 @@ Navigate through the page, utilizing the homepage or the navbar on the top of th
 Log-in to keep up with other QCFoodies and interact with them as well. Create your own post (including a photo) or add a comment on other user's posts based on your experience if you had the same food or drink. Rate or like the post. 
 
 QC Foodies is Charlotte based however open to the Foodie post from other areas of the world! Share your favorites with other interested foodies! 
+
+## Technologies Used
+### Front-End
+### Back-End
 
 ## Installation
 
@@ -59,13 +53,12 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 
-## Credits
+## Team Shooting-Stars
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+- Justin Klaver - [https://github.com/Jklaver91](Jklaver91)
+- Benny Le - [https://github.com/bennyle890](bennyle890)
+- Austin Reed - [https://github.com/areed98](areed98)
+- Allison Venning - [https://github.com/allisonvenning](allisonvenning)
 
 ## License
 
