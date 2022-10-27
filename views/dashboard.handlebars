@@ -1,0 +1,41 @@
+<section>
+  <h2>Create New Post</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-url">Link</label>
+      <input id="post-url" name="post-url" />
+    </div>
+    <label for="postImage">Image</label>
+    <input type="file" name="postImage" id="imageFile" />
+    <button type="submit" class="btn">Create</button>
+  </form>
+  {{!-- <div> --}}
+      {{!-- <form id="upload-form"> --}}
+      {{!-- <form id="upload-form" action="/api/upload" method="post" enctype="multipart/form-data"> --}}
+      {{!-- </form> --}}
+      {{!-- <button type="submit" id="upload">Upload</button> --}}
+    {{!-- </form> --}}
+    {{!-- </div> --}}
+</section>
+
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/javascript/add-post.js"></script>
