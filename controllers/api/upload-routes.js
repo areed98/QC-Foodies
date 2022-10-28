@@ -7,12 +7,12 @@ const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const { v4: uuidv4 } = require('uuid');
 
 
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'lamwil10',
-    database: 'newsfeed_db'
-});
+// const db = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password: 'lamwil10',
+//     database: 'newsfeed_db'
+// });
 
 const storage = new CloudinaryStorage({
     cloudinary: cloudinary,
@@ -25,9 +25,12 @@ const storage = new CloudinaryStorage({
 
 const upload = multer({storage})
 
-router.post('/',  upload.single('postImage'), function (req, res, next) {
+router.post('/',  upload.single('postImage'), async function (req, res, next) {
     console.log(req.file.path);
+    console.log(req.file);
     console.log('test');
+
+    return res.json({image_path: req.file.path});
     // var imageLink = req.file.path;
 
 //     var sql = 'INSERT INTO post (image_path) VALUES ("' + imageLink + '")'
