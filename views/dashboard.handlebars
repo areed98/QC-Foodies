@@ -12,10 +12,25 @@
       <label for="post-url" class="label">Website/Link to the foodie?</label>
       <input id="post-url" name="post-url" />
     </div>
-    
-    <input type="file" id="image_input" accept="image/png, image/jpg"> </input>
-{{!-- I never finished, but this is where the image uploader would go --}}
-    {{!-- <div id="display_image"></div> --}}
+
+    {{!-- Image Uploader --}}
+    <div class="field" enctype="multipart/form-data">
+        <div class="ui action input">
+            <input type="file" name="userImg" id="userImg">
+        </div>
+    </div>
+
+    {{!-- Drop Down Categories  --}}
+    {{!-- <div class="field">
+        <select id="categories" class="ui inverted dropdown">
+            <option value="">Categories</option>
+            <option id="post-category" class="food" value="recipes">Recipes</option>
+            <option id="post-category" class="food" value="restaurants">Restaurants</option>
+            <option id="post-category" class="food" value="bar-breweries">Bars/Breweries</option>
+            <option id="post-category"class="food" value="drinks">Drinks</option>
+        </select>
+    </div> --}}
+
     <button type="submit" class="btn button is-primary">Create</button>
   </form>
 </section>

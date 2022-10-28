@@ -8,13 +8,14 @@ async function newFormHandler(event) {
       method: 'POST',
       body: JSON.stringify({
         title,
-        post_url,
+        post_url
       }),
       headers: {
         'Content-Type': 'application/json'
       }
     });
-  
+
+
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {

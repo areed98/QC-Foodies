@@ -11,6 +11,7 @@ router.get('/', (req, res) => {
       'post_url',
       'title',
       'created_at',
+    //   'category'
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
@@ -53,6 +54,7 @@ router.get('/post/:id', (req, res) => {
       'post_url',
       'title',
       'created_at',
+    //   'category'
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
@@ -89,6 +91,20 @@ router.get('/post/:id', (req, res) => {
     });
 });
 
+router.get("/category", (req, res) => {
+    res.render("category", { user: req.user });
+});
+
+router.get("/categories/:category", (req, res) => {
+    db.Post.findAll({
+        Where: {
+            category: req.params.category
+        }
+    }).then(foods => {
+        res.render("category", { foods: foods, user:req.user });
+    });
+});
+
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
@@ -97,5 +113,6 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
 
 module.exports = router;

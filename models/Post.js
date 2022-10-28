@@ -16,6 +16,7 @@ class Post extends Model {
           'post_url',
           'title',
           'created_at',
+          // 'category'
           [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
         ],
         include: [
@@ -60,6 +61,11 @@ Post.init(
         key: 'id'
       }
     }
+    // category: {
+    //   type: DataTypes.STRING,
+    //   allowNull:false
+    // },
+
   },
   {
     sequelize,

@@ -8,6 +8,7 @@
   <title>QC Foodies</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -21,11 +22,12 @@
                 </a>
 
 {{!-- Drop Down Nav Bar --}}
-            {{!-- <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a> --}}
+            {{!-- <select role="button" class="navbar-burger ua inverted dropdown box"  id="mainCategories">
+                <option class="foods" value="recipes">Recipes</option>
+                <option class="foods" value="restaurants">Restaurants</option>
+                <option class="foods" value="bars-breweries">Bars/Breweries</option>
+                <option class="foods" value="drinks">Drinks</option>
+            </select> --}}
 
 {{!-- Profile and Log Out  --}}
             </div>
@@ -68,7 +70,7 @@
 
                 {{!-- Search Bar --}}
                 <div id="searchBar" class="container mb-6">
-                    <div class="field is grouped is-grouped-multiline">
+                    <div class="field is grouped is-grouped-multiline" id="mainCategories">
                         <div class="field has-addons is-justify-content-center">
                             <div class="control is-expanded">
                                 <input class="input form-control" type="text" placeholder="Search" id="searchBar">
@@ -80,25 +82,25 @@
                         <div class="field is-horizontal is-justify-content-center">
                             {{!-- Recipes Btn --}}
                             <p class="control is-flex-grow-1">
-                                <a class="button is-fullwidth">
+                                <a class="button is-fullwidth food" value="recipes" href="/categories/recipes">
                                     Recipes
                                 </a>
                             </p>
                             {{!-- Restaurant Btn  --}}
                             <p class="control is-flex-grow-1">
-                                <a class="button is-fullwidth">
+                                <a class="button is-fullwidth food" value="restaurants" href="/categories/restaurants">
                                     Restaurants
                                 </a>
                             </p>
                             {{!-- Bars/Breweries Btn --}}
                             <p class="control is-flex-grow-1">
-                                <a class="button is-fullwidth">
+                                <a class="button is-fullwidth food" value="bars-breweries" href="/categories/bars-breweries">
                                     Bars/Breweries
                                 </a>
                             </p>
                             {{!-- Drinks Btn  --}}
                             <p class="control is-flex-grow-1">
-                                <a class="button is-fullwidth">
+                                <a class="button is-fullwidth food" value="drinks" href="/categories/drinks">
                                     Drinks
                                 </a>
                             </p>
@@ -108,6 +110,8 @@
             </section>
       {{{ body }}}
     </main>
+
+
     <footer>
       Thanks for visiting!
     </footer>
@@ -117,6 +121,7 @@
   <script src="/javascript/logout.js"></script>
   {{/if}}
   <script src="/javascript/search.js"></script>
+  <script src="/javascript/category.js"></script>
 </body>
 
 </html>
