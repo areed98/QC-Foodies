@@ -40,8 +40,6 @@ async function newFormHandler(event) {
       } else {
         alert(response.statusText);
       }
-
-      // combine responses to do title url and image
     }
     catch (error) {
       console.log(error);
