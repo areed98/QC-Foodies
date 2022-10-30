@@ -26,6 +26,7 @@ async function newFormHandler(event) {
         body: JSON.stringify({
           title,
           post_url,
+          text,
           ...data
         }),
         headers: {
@@ -41,8 +42,6 @@ async function newFormHandler(event) {
       } else {
         alert(response.statusText);
       }
-
-      // combine responses to do title url and image
     }
     catch (error) {
       console.log(error);
