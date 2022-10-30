@@ -1,4 +1,4 @@
-![QC-Foodies Logo](./assets/images/Untitled_Artwork%204.png) 
+![QC-Foodies Logo](./assets/images/QC-FoodiesLogo.png) 
 
 # **QC-Foodies**
 
