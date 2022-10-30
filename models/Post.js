@@ -16,6 +16,7 @@ class Post extends Model {
           'post_url',
           'title',
           'image_path',
+          'text',
           'created_at',
           // 'category'
           [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -56,6 +57,10 @@ Post.init(
       }
     },
     image_path: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    text: {
       type: DataTypes.STRING,
       allowNull: true,
     },
