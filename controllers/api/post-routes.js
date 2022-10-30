@@ -86,7 +86,6 @@ router.post('/', withAuth, (req, res) => {
   Post.create({
     // title: req.body.title,
     // post_url: req.body.post_url,
-    text: req.body.text,
     ...req.body,
     user_id: req.session.user_id,
 
