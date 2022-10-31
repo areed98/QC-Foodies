@@ -12,6 +12,8 @@ router.get('/', (req, res) => {
       'post_url',
       'title',
       'created_at',
+      'image_path',
+      'text',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
@@ -46,6 +48,8 @@ router.get('/:id', (req, res) => {
       'post_url',
       'title',
       'created_at',
+      'image_path',
+      'text',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
@@ -77,10 +81,15 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
+
+    console.log(req.body);
   Post.create({
-    title: req.body.title,
-    post_url: req.body.post_url,
-    user_id: req.session.user_id
+    // title: req.body.title,
+    // post_url: req.body.post_url,
+    ...req.body,
+    user_id: req.session.user_id,
+
+    
   })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {

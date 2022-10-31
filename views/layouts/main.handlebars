@@ -1,3 +1,4 @@
+{{!-- main handlebar --}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +9,7 @@
   <title>QC Foodies</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -19,14 +21,6 @@
                 <a class="navbar-item" href="/">
                     <img src="images/QCfoodiesLogo.png" alt="QCFoodies Logo" width="100" height="100">
                 </a>
-
-{{!-- Drop Down Nav Bar --}}
-            {{!-- <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a> --}}
-
 {{!-- Profile and Log Out  --}}
             </div>
                 <div id="navbarMenu" class="navbar-menu">
@@ -64,50 +58,9 @@
         </div>
     </header>
     <main>
-            <section class="section" id="mainContent">
-
-                {{!-- Search Bar --}}
-                <div id="searchBar" class="container mb-6">
-                    <div class="field is grouped is-grouped-multiline">
-                        <div class="field has-addons is-justify-content-center">
-                            <div class="control is-expanded">
-                                <input class="input form-control" type="text" placeholder="Search" id="searchBar">
-                            </div>
-                            <div class="control">
-                                <button type="submit" class="button is-primary search-btn">Search</button>
-                            </div>
-                        </div>
-                        <div class="field is-horizontal is-justify-content-center">
-                            {{!-- Recipes Btn --}}
-                            <p class="control is-flex-grow-1">
-                                <a class="button is-fullwidth">
-                                    Recipes
-                                </a>
-                            </p>
-                            {{!-- Restaurant Btn  --}}
-                            <p class="control is-flex-grow-1">
-                                <a class="button is-fullwidth">
-                                    Restaurants
-                                </a>
-                            </p>
-                            {{!-- Bars/Breweries Btn --}}
-                            <p class="control is-flex-grow-1">
-                                <a class="button is-fullwidth">
-                                    Bars/Breweries
-                                </a>
-                            </p>
-                            {{!-- Drinks Btn  --}}
-                            <p class="control is-flex-grow-1">
-                                <a class="button is-fullwidth">
-                                    Drinks
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
       {{{ body }}}
     </main>
+
     <footer>
       Thanks for visiting!
     </footer>
@@ -116,7 +69,6 @@
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
-  <script src="/javascript/search.js"></script>
 </body>
 
 </html>

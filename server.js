@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+const multer  = require('multer')
+const upload = multer({ dest: 'uploads/' })
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -33,7 +35,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use("/images", express.static(path.join(__dirname, "public/images")));
 app.use(express.static(path.join(__dirname, "public/images")));
-
 
 app.use(require('./controllers/'));
 
