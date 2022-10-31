@@ -39,14 +39,14 @@
 {{#if posts.length}}
 <section>
   <h2 class="is-size-2 center-text">Your Posts</h2>
-  <ul>
+  <ol>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link box">Edit post</a>
     </li>
     {{/each}}
-  </ul>
+  </ol>
 </section>
 {{/if}}
 
