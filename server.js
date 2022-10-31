@@ -36,7 +36,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 app.use(express.static(path.join(__dirname, "public/images")));
 
-
 app.use(require('./controllers/'));
 
 sequelize.sync({ force: false }).then(() => {

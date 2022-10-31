@@ -29,8 +29,21 @@
     {{!-- </div> --}}
 </section>
 
+      <div>
+        <label for="text" class="label">Text</label>
+        <textarea id="text" name="text" /></textarea>
+      </div>
+      
+      <div> 
+      <label for="postImage" class="label">Image</label>
+      <input type="file" name="postImage" id="imageFile" />
+      </div>
+      
+      <button type="submit" class="btn button is-primary">Create</button>
+    </form>
+  </section>
 {{#if posts.length}}
-<section>
+<section class="box">
   <h2 class="is-size-2 center-text">Your Posts</h2>
   <ul class="box">
     {{#each posts as |post|}}
