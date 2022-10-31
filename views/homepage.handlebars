@@ -1,0 +1,10 @@
+<div>
+  <h1 class="foodie-post title is-1 is-center">QC Foodie Posts</h1>
+</div>
+<ul class="post-list field container pl-6 pr-6">
+  {{#each posts as |post|}}
+  <li class="box">
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ul>
