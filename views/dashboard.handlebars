@@ -1,45 +1,47 @@
-<section>
-  <h2 class="is-size-2 center-text">Create New Post</h2>
+<section class="mr-6 ml-6">
+  <section class="box">
+    <h2 class="is-size-2 center-text">Create New Post</h2>
 
-  <form class="new-post-form">
-    
-    <div>
-      <label for="post-title" class="label">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    
-    <div>
-      <label for="post-url" class="label">Link</label>
-      <input id="post-url" name="post-url" />
-    </div>
+    <form class="new-post-form">
+      
+      <div>
+        <label for="post-title" class="label">Title</label>
+        <input type="text" id="post-title" name="post-title" />
+      </div>
+      
+      <div>
+        <label for="post-url" class="label">Link</label>
+        <input id="post-url" name="post-url" />
+      </div>
 
-    <div>
-      <label for="text" class="label">Text</label>
-      <textarea id="text" name="text" /></textarea>
-    </div>
-    
-    <div> 
-    <label for="postImage" class="label">Image</label>
-    <input type="file" name="postImage" id="imageFile" />
-    </div>
-    
-    <button type="submit" class="btn button is-primary">Create</button>
-  </form>
-</section>
-
+      <div>
+        <label for="text" class="label">Text</label>
+        <textarea id="text" name="text" /></textarea>
+      </div>
+      
+      <div> 
+      <label for="postImage" class="label">Image</label>
+      <input type="file" name="postImage" id="imageFile" />
+      </div>
+      
+      <button type="submit" class="btn button is-primary">Create</button>
+    </form>
+  </section>
 {{#if posts.length}}
-<section>
+<section class="box">
   <h2 class="is-size-2 center-text">Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
+    <div class="box">
     <li>
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
+    </div>
     {{/each}}
   </ol>
 </section>
 {{/if}}
-
+</section>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="/javascript/add-post.js"></script>

@@ -1,9 +1,5 @@
 <article class="post">
 
-  {{#if image_path}}
-  <img src="{{image_path}}" alt="{{image_path}}">
-  {{/if}}
-
   <div class="title">
 
     <a href="{{post_url}}" target="_blank">{{title}}</a>
@@ -12,6 +8,10 @@
   
   {{#if text}}
   <p>{{text}}</p>
+  {{/if}}
+
+  {{#if image_path}}
+  <img src="{{image_path}}" alt="{{image_path}}">
   {{/if}}
   
   <div class="meta">

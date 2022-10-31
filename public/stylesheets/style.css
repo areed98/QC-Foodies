@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.navbar-item img {
+  max-height: 6.5rem;
+}
+
 body, html {
   height: 100%;
   padding: 0;
@@ -65,7 +69,7 @@ textarea {
 }
 
 form > div {
-  margin-bottom: 2%;
+  margin-bottom: .5%;
 }
 
 form label {
@@ -83,7 +87,6 @@ form label {
 
 header {
   border-bottom: 1px solid #ccc;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
@@ -182,4 +185,16 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+
+@media screen and (max-width: 1023px) {
+
+    header {
+      justify-content: center;
+    }
+
+    #navbarBrand {
+      flex-grow: 1;
+      align-content: space-between;
+    }
 }
