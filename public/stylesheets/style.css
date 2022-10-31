@@ -6,7 +6,10 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* navigation size change*/
+.navbar-start {
+  display: flex;
+  position: absolute;
+}
 
 .navbar-item img {
     max-height: 6.5rem;
@@ -198,4 +201,23 @@ footer {
 
 .center-text {
     text-align: center;
+}
+
+.a-little {
+  margin-left: 300px;
+  margin-top: 10px;
+  align-items: center;
+  color: hsl(171, 71%, 53%);
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
 }
