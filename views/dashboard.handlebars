@@ -2,43 +2,36 @@
   <h2 class="is-size-2 center-text">Create New Post</h2>
 
   <form class="new-post-form">
-    {{!-- Title --}}
     <div>
-      <label for="post-title" class="label">Title of your post</label>
+      <label for="post-title">Title</label>
       <input type="text" id="post-title" name="post-title" />
     </div>
-    {{!-- Website Link  --}}
     <div>
-      <label for="post-url" class="label">Website/Link to the foodie?</label>
+      <label for="post-url">Link</label>
       <input id="post-url" name="post-url" />
     </div>
-
-    {{!-- Image Uploader --}}
-    <div class="field" enctype="multipart/form-data">
-        <div class="ui action input">
-          <label for="postImage">Image</label>
-            <input type="file" name="postImage" id="imageFile">
-        </div>
+    <div>
+      <label for="text">Text</label>
+      <textarea id="text" name="text" /></textarea>
     </div>
-
-    {{!-- Drop Down Categories  --}}
-    {{!-- <div class="field">
-        <select id="categories" class="ui inverted dropdown">
-            <option value="">Categories</option>
-            <option id="post-category" class="food" value="recipes">Recipes</option>
-            <option id="post-category" class="food" value="restaurants">Restaurants</option>
-            <option id="post-category" class="food" value="bar-breweries">Bars/Breweries</option>
-            <option id="post-category"class="food" value="drinks">Drinks</option>
-        </select>
-    </div> --}}
-
+    <div> 
+    <label for="postImage">Image</label>
+    <input type="file" name="postImage" id="imageFile" />
+    </div>
     <button type="submit" class="btn button is-primary">Create</button>
   </form>
+  {{!-- <div> --}}
+      {{!-- <form id="upload-form"> --}}
+      {{!-- <form id="upload-form" action="/api/upload" method="post" enctype="multipart/form-data"> --}}
+      {{!-- </form> --}}
+      {{!-- <button type="submit" id="upload">Upload</button> --}}
+    {{!-- </form> --}}
+    {{!-- </div> --}}
 </section>
 
 {{#if posts.length}}
 <section>
-  <h2 class="is-size-2 center-text">Your Posts</h2>
+  <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
