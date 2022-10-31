@@ -15,7 +15,7 @@
       <textarea id="text" name="text" /></textarea>
     </div>
     <div class="action input center aligned"> 
-    <label for="postImage">Image</label>
+    <label for="postImage"></label>
     <input type="file" name="postImage" id="imageFile" />
     </div>
     <button type="submit" class="btn button is-primary">Create</button>
@@ -32,7 +32,7 @@
 {{#if posts.length}}
 <section>
   <h2 class="is-size-2 center-text">Your Posts</h2>
-  <ul>
+  <ul class="box">
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
