@@ -36,7 +36,7 @@
                     <div class="navbar-start">
                         <div class="navbar-item">
                             <div class="buttons are-medium">
-                                <a class="button is-light" href="/">
+                                <a class="button is-light home-btn" href="/">
                                     Home
                                 </a>
                             </div>
@@ -48,7 +48,12 @@
                                 </a>
                             </div>
                         </div>
+                    <div>
+                        <h1 class="title is-1 a-little">QC Foodies</h1>
                     </div>
+                    </div>
+
+           
 
                     {{!-- LogIn/LogOut/Sign Up Btn --}}
                     <div class="navbar-end">
@@ -66,11 +71,11 @@
             </nav>
         </div>
     </header>
-    <main>
+
             <section class="section" id="mainContent">
 
                 {{!-- Search Bar --}}
-                <div id="searchBar" class="container mb-6">
+                {{!-- <div id="searchBar" class="container mb-6">
                     <div class="field is grouped is-grouped-multiline" id="mainCategories">
                         <div class="field has-addons is-justify-content-center">
                             <div class="control is-expanded">
@@ -79,36 +84,38 @@
                             <div class="control">
                                 <button type="submit" class="button is-primary search-btn">Search</button>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="field is-horizontal is-justify-content-center">
                             {{!-- Recipes Btn --}}
-                            <p class="control is-flex-grow-1">
+                            {{!-- <p class="control is-flex-grow-1">
                                 <a class="button is-fullwidth food" value="recipes" href="/categories/recipes">
                                     Recipes
                                 </a>
-                            </p>
+                            </p>  --}}
                             {{!-- Restaurant Btn  --}}
-                            <p class="control is-flex-grow-1">
+                            {{!-- <p class="control is-flex-grow-1">
                                 <a class="button is-fullwidth food" value="restaurants" href="/categories/restaurants">
                                     Restaurants
                                 </a>
-                            </p>
+                            </p> --}}
                             {{!-- Bars/Breweries Btn --}}
-                            <p class="control is-flex-grow-1">
+                            {{!-- <p class="control is-flex-grow-1">
                                 <a class="button is-fullwidth food" value="bars-breweries" href="/categories/bars-breweries">
                                     Bars/Breweries
                                 </a>
-                            </p>
+                            </p>  --}}
                             {{!-- Drinks Btn  --}}
-                            <p class="control is-flex-grow-1">
+                            {{!-- <p class="control is-flex-grow-1">
                                 <a class="button is-fullwidth food" value="drinks" href="/categories/drinks">
                                     Drinks
                                 </a>
-                            </p>
+                            </p>   --}}
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
+
+    <main>
       {{{ body }}}
     </main>
 
@@ -121,7 +128,7 @@
   <script src="/javascript/logout.js"></script>
   {{/if}}
   <script src="/javascript/search.js"></script>
-  <script src="/javascript/category.js"></script>
+  {{!-- <script src="/javascript/category.js"></script> --}}
 </body>
 
 </html>
