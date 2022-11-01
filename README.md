@@ -1,19 +1,16 @@
-![QC-Foodies Logo](public\images\qc-foodies-logo.png) 
+![QC-Foodies Logo](./assets/images/final-logo.png) 
 
 # **QC-Foodies**
 
 ## **Table of Contents** 
 
-- [**QC-Foodies**](#qc-foodies)
-  - [**Table of Contents**](#table-of-contents)
-  - [**Website URL**](#website-url)
-  - [**Description**](#description)
-  - [**Technologies Used**](#technologies-used)
-  - [**Installation**](#installation)
-  - [**Usage**](#usage)
-  - [**Team Shooting-Stars**](#team-shooting-stars)
-  - [**License**](#license)
-    - [Thanks for visiting our GitHub!](#thanks-for-visiting-our-github)
+- [Website URL](#websiteURL)
+- [Description](#description)
+- [Technology](#technology)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Team Shooting-Stars](#team-shooting-stars)
+- [License](#license)
 
 ---
 
@@ -59,12 +56,18 @@ Heroku account required, to enable deployment of application through Heroku.
 
 ## **Usage**
 
-Step 1: Create username and password through sign-up.
-Step 2: Log-in
-Step 3: Navigation ()
-Step 4: explain navigation links of each step
+Step 1: Create username and password through sign-up
 
-To add a post navigate to your profile then follow on screen form data and submit when all forms are complete. Your new post will append to the page and be added to the master list of posts.
+Step 2: Log-in
+
+Step 3: Navigation
+
+Step 4: Create your own post or comment/like other user's posts
+
+![sign-up page](assets/images/login-signup-screenshot.png)
+![home page](assets/images/main-page-screenshot.png)
+![profile page](assets/images/create-post-screenshot.png)
+![like and comment](assets/images/post-screenshot.png)
 
 ---
 
@@ -79,4 +82,4 @@ To add a post navigate to your profile then follow on screen form data and submi
 
 ![GitHub License](https://img.shields.io/badge/GitHub-MIT-green.svg)
 
-### Thanks for visiting our GitHub!
+### Thanks for visiting our Project!
