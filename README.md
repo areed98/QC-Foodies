@@ -1,5 +1,5 @@
 
-![QC-Foodies Logo](public\images\QC-Foodies-Logo-Rework.png) 
+![QC-Foodies Logo](https://github.com/areed98/QC-Foodies/blob/Develop/public/images/QC-Foodies-Logo-Rework.png?raw=true) 
 
 # **QC-Foodies**
 
@@ -32,7 +32,7 @@ Log-in to keep up with other QCFoodies and interact with them as well. Create yo
 QC Foodies is Charlotte based, however open to the Foodie posts from other areas of the world! Share your favorites with other interested foodies! 
 
 Picture of the deployed site can be found below! <br/>
-![Deployed](public\images\QCFoodiesHomepage.png) 
+![Deployed](https://github.com/areed98/QC-Foodies/blob/Develop/public/images/QCFoodiesHomepage.png?raw=true) 
 ---
 
 ## **Technologies Used**
