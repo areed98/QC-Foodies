@@ -67,11 +67,6 @@ Step 3: Navigation
 
 Step 4: Create your own post or comment/like other user's posts
 
-![sign-up page](assets/images/login-signup-screenshot.png)
-![home page](assets/images/main-page-screenshot.png)
-![profile page](assets/images/create-post-screenshot.png)
-![like and comment](assets/images/post-screenshot.png)
-
 ---
 
 ## **Team Shooting-Stars**
