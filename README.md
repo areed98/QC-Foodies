@@ -1,4 +1,4 @@
-![QC-Foodies Logo](./assets/images/QC-FoodiesLogo.png) 
+![QC-Foodies Logo](./assets/images/final-logo.png) 
 
 # **QC-Foodies**
 
@@ -38,6 +38,13 @@ QC Foodies is Charlotte based, however open to the Foodie posts from other areas
 - MySQL/Sequelize 
 - Node.js
 - Cloudinary
+- UUID
+- Nodemon
+- Dotenv
+- Express
+- Handlebars
+- Multer
+- Bcrypt
 
 ---
 
@@ -49,16 +56,18 @@ Heroku account required, to enable deployment of application through Heroku.
 
 ## **Usage**
 
-Step 1: Create username and password through sign-up.
+Step 1: Create username and password through sign-up
+
 Step 2: Log-in
-Step 3: Navigation ()
-Step 4: explain navigation links of each step
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Step 3: Navigation
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Step 4: Create your own post or comment/like other user's posts
+
+![sign-up page](assets/images/login-signup-screenshot.png)
+![home page](assets/images/main-page-screenshot.png)
+![profile page](assets/images/create-post-screenshot.png)
+![like and comment](assets/images/post-screenshot.png)
 
 ---
 
@@ -73,4 +82,4 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ![GitHub License](https://img.shields.io/badge/GitHub-MIT-green.svg)
 
-### Thanks for visiting our GitHub!
+### Thanks for visiting our Project!
