@@ -1,5 +1,5 @@
 
-![QC-Foodies Logo](public\images\QC-Foodies-Logo-Rework.png) 
+![QC-Foodies Logo](https://github.com/areed98/QC-Foodies/blob/Develop/public/images/QC-Foodies-Logo-Rework.png?raw=true) 
 
 # **QC-Foodies**
 
@@ -17,7 +17,7 @@
 
 ## **Website URL**
 
-[https://heroku](https://qc-foodies.herokuapp.com/)
+[Deployed Site - Click Here](https://qc-foodies.herokuapp.com/)
 
 ## **Description**
 
@@ -31,8 +31,8 @@ Log-in to keep up with other QCFoodies and interact with them as well. Create yo
 
 QC Foodies is Charlotte based, however open to the Foodie posts from other areas of the world! Share your favorites with other interested foodies! 
 
-Picture of the deployed site can be found below!
-![Deployed](public\images\QCFoodiesHomepage.png) 
+Picture of the deployed site can be found below! <br/>
+![Deployed](https://github.com/areed98/QC-Foodies/blob/Develop/public/images/QCFoodiesHomepage.png?raw=true) 
 ---
 
 ## **Technologies Used**
@@ -66,11 +66,6 @@ Step 2: Log-in
 Step 3: Navigation
 
 Step 4: Create your own post or comment/like other user's posts
-
-![sign-up page](assets/images/login-signup-screenshot.png)
-![home page](assets/images/main-page-screenshot.png)
-![profile page](assets/images/create-post-screenshot.png)
-![like and comment](assets/images/post-screenshot.png)
 
 ---
 
